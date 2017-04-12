@@ -2,9 +2,10 @@
   "name": "docsbox",
   "version": "1.0.0",
   "description": "Node app to handle your documents like contracts, bills etc... sync to googledrive or any other online data storage which have a sync app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Rodrive/docsbox/issues"
   },
-  "homepage": "https://github.com/Rodrive/docsbox#readme"
+  "homepage": "https://github.com/Rodrive/docsbox#readme",
+  "dependencies": {
+    "async": "^2.3.0",
+    "bluebird": "^3.5.0",
+    "callbackify": "^1.1.0",
+    "i18n": "^0.8.3"
+  }
 }
