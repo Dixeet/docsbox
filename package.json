@@ -18,9 +18,8 @@
   },
   "homepage": "https://github.com/Rodrive/docsbox#readme",
   "dependencies": {
-    "async": "^2.3.0",
     "bluebird": "^3.5.0",
-    "callbackify": "^1.1.0",
-    "i18n": "^0.8.3"
+    "i18n": "^0.8.3",
+    "lodash": "^4.17.4"
   }
 }
