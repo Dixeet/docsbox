@@ -4,8 +4,8 @@
   "description": "Node app to handle your documents like contracts, bills etc... sync to googledrive or any other online data storage which have a sync app",
   "main": "server.js",
   "scripts": {
-    "start": "node %NODE_DEBUG_OPTION% node_modules/nodemon/bin/nodemon.js --debug=3001 server.js",
-    "start:front": "node %NODE_DEBUG_OPTION% server.js"
+    "debug": "node %NODE_DEBUG_OPTION% server.js test",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
     "bluebird": "^3.5.0",
     "express": "^4.15.2",
     "i18n": "^0.8.3",
+    "jss": "^7.0.3",
+    "jss-preset-default": "^2.0.0",
+    "jss-theme-reactor": "^0.10.0",
     "lodash": "^4.17.4",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-alpha.2",
@@ -35,12 +38,6 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "nodemon": "^1.11.0",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.18.0"
   }
