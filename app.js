@@ -1,7 +1,7 @@
 const i18n = require('i18n'),
     path = require('path'),
     readline = require('readline'),
-    config = require('./lib/simpleConfig/simpleConfig.js');
+    config = require('./lib/simpleConfig');
 
 const rl = readline.createInterface({
     input: process.stdin,
