@@ -7,7 +7,7 @@ module.exports = {
   entry: [
     'react-hot-loader/patch',
     'webpack-hot-middleware/client?quiet=true',
-    './web/index.js',
+    './web/index.jsx',
   ],
   output: {
     path: path.join(__dirname, 'web'),
@@ -21,6 +21,16 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', include: path.join(__dirname, 'web') },
+      { test: /\.jsx$/, loader: 'babel-loader', include: path.join(__dirname, 'web') },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    alias: {
+      Components: path.resolve(__dirname, 'web/Components'),
+      Stores: path.resolve(__dirname, 'web/Stores'),
+      Base: path.resolve(__dirname, 'web'),
+      Containers: path.resolve(__dirname, 'web/Containers'),
+    },
   },
 };

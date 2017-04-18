@@ -18,18 +18,19 @@
   },
   "homepage": "https://github.com/Rodrive/docsbox#readme",
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
     "bluebird": "^3.5.0",
+    "classnames": "^2.2.5",
     "express": "^4.15.2",
     "i18n": "^0.8.3",
-    "jss": "^7.0.3",
-    "jss-preset-default": "^2.0.0",
-    "jss-theme-reactor": "^0.10.0",
     "lodash": "^4.17.4",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-alpha.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.6",
+    "react-jss": "^6.1.1",
     "webpack": "^2.4.1"
   },
   "devDependencies": {

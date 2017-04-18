@@ -1,6 +1,6 @@
 {
   "watch": [
     "server.js",
-    "webpact.config.json"
+    "webpack.config.json"
   ]
 }
