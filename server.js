@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const webpackDev = require('webpack-dev-middleware');
 //eslint-disable-next-line
 const webpackHot = require('webpack-hot-middleware');
-const config = require('./webpack.config');
+const config = require('./webpack.dev.config');
 
 const app = express();
 const compiler = webpack(config);
@@ -17,6 +17,7 @@ app.use(webpackDev(compiler, {
 app.use(webpackHot(compiler));
 
 app.use('/static', express.static(path.join(__dirname, '/web/static')));
+app.use('/dist', express.static(path.join(__dirname, '/web/dist')));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/index.html'));

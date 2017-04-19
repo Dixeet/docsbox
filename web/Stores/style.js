@@ -9,8 +9,10 @@ let theme = {
   },
 };
 
-const globalSheet = jss.createStyleSheet();
+const globalSheet = jss.createStyleSheet({test: {color: 'red'}});
 globalSheet.attach();
+
+injectSheet(globalSheet);
 
 const styleStore = {
   injectSheet,

@@ -28,6 +28,9 @@ const styles = {
     backgroundColor: indigo[400],
     color: 'white',
   },
+  avatar: {
+    marginRight: '30px',
+  },
 };
 
 
@@ -41,6 +44,7 @@ function SideBar(props) {
               <Avatar
                 alt="DocsBox"
                 src="/static/android-chrome-192x192.png"
+                className={props.classes.avatar}
               />
               <Text type="headline" component="h2" colorInherit>
                 DocsBox
